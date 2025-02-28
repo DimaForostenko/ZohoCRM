@@ -43,14 +43,7 @@ ZOHO_CLIENT_SECRET=your_zoho_client_secret
 
 ### 4️⃣ Налаштування бази даних
 Вкажіть параметри підключення у `.env`:
-```env
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=your_database
-DB_USERNAME=your_username
-DB_PASSWORD=your_password
-```
+
 
 Створіть таблиці:
 ```bash
@@ -88,7 +81,7 @@ npm run dev
 
 ### Використання форми
 Відкрийте браузер і перейдіть за посиланням:
-```text
+
 http://127.0.0.1:8000
 ```
 
@@ -112,16 +105,6 @@ php artisan zoho:refresh-token
 |--------|--------------------------------|--------------------------|
 | `POST` | `/api/zoho/create` | Створення угоди та акаунта |
 
-Приклад запиту:
-```json
-{
-  "dealName": "Test Deal",
-  "dealStage": "Qualification",
-  "accountName": "Test Account",
-  "accountWebsite": "https://test.com",
-  "accountPhone": "+1234567890"
-}
-```
 
 ---
 
